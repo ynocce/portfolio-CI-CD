@@ -12,7 +12,7 @@ steps:
 
 - task: AzureFileCopy@5
   inputs:
-    SourcePath: 'index.html'
+    SourcePath: 'portifolio.integrado.azureDevOps'
     azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
     Destination: 'AzureBlob'
     storage: 'testedevopsgit'
