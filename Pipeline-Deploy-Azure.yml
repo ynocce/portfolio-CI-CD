@@ -2,8 +2,8 @@
 #A mesma está integrada com o Azure DevOps em um esteira automatizada CI/CD
 #Deploy será feito em um Azure Static Web.
 
-trigger:
-- main
+# trigger:
+# - main
 
 pool:
   vmImage: windows-latest
