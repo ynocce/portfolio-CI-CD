@@ -18,9 +18,14 @@ steps:
 #     storage: 'testedevopsgit'
 #     ContainerName: '$web'
 
-- task: AzureCLI@2
+- task: AzurePowerShell@5
   inputs:
     azureSubscription: 'Azure-DevOps-Subscription(1)(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
-    scriptType: 'batch'
-    scriptLocation: 'inlineScript'
-    inlineScript: az storage blob upload-batch -s index.html -d $web --account-name testedevopsgit
+    ScriptType: 'InlineScript'
+    Inline: |
+      # upload a file
+      set-AzStorageblobcontent -File "index.html" `
+      -Container `$web `
+      -Blob "testedevopsgit" `
+      -Context $ctx
+    azurePowerShellVersion: 'LatestVersion'
