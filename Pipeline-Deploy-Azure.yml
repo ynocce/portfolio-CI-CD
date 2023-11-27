@@ -18,14 +18,10 @@ steps:
 #     storage: 'testedevopsgit'
 #     ContainerName: '$web'
 
-- task: AzurePowerShell@5
+- task: azurestoragecontainer@0
   inputs:
-    azureSubscription: 'Azure-DevOps-Subscription(1)(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
-    ScriptType: 'InlineScript'
-    Inline: |
-      # upload a file
-      set-AzStorageblobcontent -File "index.html" `
-      -Container `$web `
-      -Blob "testedevopsgit" `
-      -Context $ctx
-    azurePowerShellVersion: 'LatestVersion'
+    ConnectedServiceName: 'Azure-DevOps-Subscription(1)(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
+    StorageName: 'testedevopsgit'
+    ContainerName: '$web'
+    ContainerPublicAccessLevel: 'Container'
+    ContinueOnExistence: false
