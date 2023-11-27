@@ -18,12 +18,10 @@ steps:
 #     storage: 'testedevopsgit'
 #     ContainerName: 'testedevops'
 
-- task: GitClone@2
+- task: GitDownloader@0
   inputs:
-    RepositoryURL: 'https://github.com/ynocce/portfolio-CI-CD.git'
-    Branch: 'main'
-    FallbackBranch: 'main'
-    BaseBranch: 'main'
+    RepositoryUrl: 'https://github.com/ynocce/portfolio-CI-CD.git'
+    BranchTag: 'main'
 
 - task: AzureCLI@2
   inputs:
@@ -32,3 +30,4 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage blob upload-batch -s ''D:\a\1\s\portfolio-CI-CD.git'' -d ''$web'' --account-name ''testegitdevops1'''
     addSpnToEnvironment: true
+
