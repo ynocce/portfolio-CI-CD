@@ -10,18 +10,10 @@ pool:
 
 steps:
 
-# - task: AzureFileCopy@5
-#   inputs:
-#     SourcePath: 'index.html'
-#     azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
-#     Destination: 'AzureBlob'
-#     storage: 'testedevopsgit'
-#     ContainerName: '$web'
-
-- task: azurestoragecontainer@0
+- task: AzureFileCopy@5
   inputs:
-    ConnectedServiceName: 'Azure-DevOps-Subscription(1)(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
-    StorageName: 'testedevopsgit'
-    ContainerName: '$web'
-    ContainerPublicAccessLevel: 'Container'
-    ContinueOnExistence: false
+    SourcePath: 'index.html'
+    azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
+    Destination: 'AzureBlob'
+    storage: 'testedevopsgit'
+    ContainerName: 'testedevops'
