@@ -13,5 +13,5 @@ steps:
 
 - task: AzureStaticWebApp@0
   inputs:
-    app_location: '/'
+    app_location: 'portifolio.integrado.azureDevOps'
     azure_static_web_apps_api_token: '$(token)'
