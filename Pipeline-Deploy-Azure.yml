@@ -28,6 +28,6 @@ steps:
     azureSubscription: 'Azure-DevOps-Subscription(1)(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
     scriptType: 'batch'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az storage blob upload-batch -s ''D:\a\1\s\portfolio-CI-CD.git'' -d ''$web'' --account-name ''testegitdevops1'''
+    inlineScript: 'az storage blob upload-batch -s ''D:\a\1\s\portfolio-CI-CD.git'' -d ''tesdeveops2'' --account-name ''testegitdevops1'''
     addSpnToEnvironment: true
 
