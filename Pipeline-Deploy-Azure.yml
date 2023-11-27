@@ -10,10 +10,25 @@ pool:
 
 steps:
 
-- task: AzureFileCopy@5
+# - task: AzureFileCopy@5
+#   inputs:
+#     SourcePath: 'index.html'
+#     azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
+#     Destination: 'AzureBlob'
+#     storage: 'testedevopsgit'
+#     ContainerName: 'testedevops'
+
+- task: GitClone@2
   inputs:
-    SourcePath: 'index.html'
-    azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
-    Destination: 'AzureBlob'
-    storage: 'testedevopsgit'
-    ContainerName: 'testedevops'
+    RepositoryURL: 'https://github.com/ynocce/portfolio-CI-CD.git'
+    Branch: 'master'
+    FallbackBranch: 'master'
+    BaseBranch: 'master'
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Azure-DevOps-Subscription(1)(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
+    scriptType: 'batch'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az storage blob upload-batch -s ''index.html'' -d ''$web'' --account-name ''testegitdevops1'''
+    addSpnToEnvironment: true
