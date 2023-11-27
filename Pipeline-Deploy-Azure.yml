@@ -1,0 +1,12 @@
+#Essa pipeline tem como objetivo realizar deploy na Azure
+#A mesma está integrada com o Azure DevOps em um esteira automatizada CI/CD
+#Deploy será feito em um Azure Static Web.
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
