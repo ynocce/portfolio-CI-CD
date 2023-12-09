@@ -295,7 +295,7 @@ section.sobre .flex {
 
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
-    padding: 80px 4%;
+    padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
@@ -328,17 +328,18 @@ section.portfolio .flex {
     background-color: #000000b8;
     border-radius: 40px;
     display: flex;
+    text-align: justify;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
     color: #fff;
-    opacity: 0;
     transition: .5s;
 }
 
+
 .overlay:hover {
-    opacity: 1;
+    opacity: 0;
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
@@ -391,7 +392,7 @@ form .btn-enviar input {
 
 footer {
     padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    /* box-shadow: 0 0 0px 0px #ffffff1d; */
 }
 
 footer .flex {
