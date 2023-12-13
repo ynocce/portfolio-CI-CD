@@ -1,5 +1,6 @@
 #Pipeline de Deploy no Azure Portal
 #Serviço usado: Azure Static Web App
+#Pipeline no repos do github
 
 trigger:
 - main
