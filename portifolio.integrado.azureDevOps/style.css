@@ -205,6 +205,9 @@ section.topo-do-site .flex {
 
 /* ESTILO DAS ESPECIALIDADES */
 
+section.especiliadades2 {
+    display: none;
+}
 .especiliadades h2{
     padding-bottom: 15px;
 }
@@ -297,6 +300,7 @@ section.sobre .flex {
 section.portfolio {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
+    padding-bottom: 70px;
 }
 
 section.portfolio .flex {
@@ -326,8 +330,11 @@ section.portfolio .flex {
     width: 100%;
     height: 100%;
     background-color: #000000b8;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #2c2c2c;
     border-radius: 40px;
     display: flex;
+    padding: 7px;
     text-align: justify;
     align-items: center;
     justify-content: center;
@@ -391,7 +398,7 @@ form .btn-enviar input {
 /* ESTILO DO RODAPÉ */
 
 footer {
-    padding: 40px 4%;
+    padding: 5px 4%;
     /* box-shadow: 0 0 0px 0px #ffffff1d; */
 }
 
@@ -443,11 +450,11 @@ footer .line-footer p a {
     /* TOPO DO SITE */
 
     section.topo-do-site .flex {
-        gap: 40px;
+        gap: 1px;
     }
 
     section.topo-do-site {
-        padding: 20px 8%;
+        padding: 10px 8%;
     }
 
     .topo-do-site h1 {
@@ -456,16 +463,60 @@ footer .line-footer p a {
 
     .topo-do-site .img-topo-site img {
         width: 100%;
+        display: none;
     }
+    
 
     /* ESPECIALIDADES */
+
     section.especiliadades {
+        display: none;
+    }
+
+    section.especiliadades2 {
         padding: 40px 8%;
+        display: revert;
+    }
+
+    section.especiliadades2 .flex {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .especiliadades2 h2{
+        padding-bottom: 15px;
+    }
+    
+    section.especiliadades2 {
+        padding: 40px 4%;
+    }
+    
+    .especiliadades2 .especialidades-box {
+        color: #ffffff;
+        padding: 4px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 20px;
+        margin-top: 15px;
+        transition: .2s;
+    }
+    
+    .especiliadades2 .especialidades-box img {
+        margin-top: 4px;
+    }
+    
+    .especiliadades2 .especialidades-box i {
+        font-size: 70px;
+        color: #00FF08;
+    }
+    
+    .especiliadades2 .especialidades-box h3 {
+        font-size: 28px;
+        margin: 15px 0;
     }
 
     /* SOBRE */
     section.sobre {
-        padding: 80px 8%;
+        padding: 40px 8%;
     }
 
     .sobre .txt-sobre h2 {
