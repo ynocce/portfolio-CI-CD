@@ -217,7 +217,7 @@ section.especiliadades {
 }
 
 section.especiliadades .flex {
-    gap: 10px;
+    gap: 5px;
 }
 
 .especiliadades .especialidades-box {
@@ -471,11 +471,13 @@ footer .line-footer p a {
 
     section.especiliadades {
         display: none;
+        
     }
 
     section.especiliadades2 {
         padding: 40px 1%;
         display: revert;
+        align-items: center;
     }
 
     section.especiliadades2 .flex {
@@ -494,6 +496,7 @@ footer .line-footer p a {
         border-radius: 20px;
         margin-top: 15px;
         transition: .2s;
+        width: 75px;
     }
     
     .especiliadades2 .especialidades-box img {
