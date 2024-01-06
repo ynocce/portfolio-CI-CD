@@ -477,12 +477,12 @@ footer .line-footer p a {
     section.especiliadades2 {
         padding: 40px 1%;
         display: revert;
-        align-items: center;
+        /* align-items: center; */
     }
 
     section.especiliadades2 .flex {
         flex-direction: row;
-        gap: 10px;
+        gap: 5px;
     }
     .especiliadades2 h2{
         padding-bottom: 15px;
@@ -491,12 +491,13 @@ footer .line-footer p a {
     .especiliadades2 .especialidades-box {
         color: #ffffff;
         padding: 4px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 10%;
+        padding-left: 11%;
         border-radius: 20px;
         margin-top: 15px;
         transition: .2s;
         width: 78px;
+
     }
     
     .especiliadades2 .especialidades-box img {
