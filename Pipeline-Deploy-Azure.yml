@@ -5,7 +5,8 @@
 trigger:
 - main
 
-pool: Ubunto 64-bit
+pool: 
+  vmImage: Ubunto-latest
 
 steps:
 
