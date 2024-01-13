@@ -10,7 +10,13 @@ pool:
 
 steps:
 
-- task: AzureStaticWebApp@0
+# - task: AzureStaticWebApp@0
+#   inputs:
+#     app_location: 'portifolio.integrado.azureDevOps'
+#     azure_static_web_apps_api_token: '$(token)'
+- task: CopyFiles@2
   inputs:
-    app_location: 'portifolio.integrado.azureDevOps'
-    azure_static_web_apps_api_token: '$(token)'
+    SourceFolder: 'portifolio.integrado.azureDevOps'
+    Contents: '**'
+    TargetFolder: $(build.artifactstagingdirectory)
+
