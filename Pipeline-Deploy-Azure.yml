@@ -8,19 +8,17 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
+stages:
+  - stage:
+    jobs:
+      - job: 
+        steps:
+          - task: CopyFiles@2
+            inputs:
+              Contents: 'portifolio.integrado.azureDevOps/**'
+              TargetFolder: $(build.artifactstagingdirectory)
 
-# - task: AzureStaticWebApp@0
-#   inputs:
-#     app_location: 'portifolio.integrado.azureDevOps'
-#     azure_static_web_apps_api_token: '$(token)'
-- task: CopyFiles@2
-  inputs:
-    # SourceFolder: 'portfolio-CI-CD'
-    Contents: 'portifolio.integrado.azureDevOps/**'
-    TargetFolder: $(build.artifactstagingdirectory)
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+              ArtifactName: 'drop'
