@@ -16,7 +16,7 @@ steps:
 #     azure_static_web_apps_api_token: '$(token)'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '**'
+    SourceFolder: 'ynocce/portfolio-CI-CD'
     Contents: 'portifolio.integrado.azureDevOps'
     TargetFolder: $(build.artifactstagingdirectory)
 
