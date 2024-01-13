@@ -6,8 +6,8 @@ trigger:
 - main
 
 pool: 
-  vmImage: ubunto-latest
-
+  vmImage: 'windows-latest'
+  
 steps:
 
 - task: AzureStaticWebApp@0
