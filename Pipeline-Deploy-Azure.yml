@@ -9,7 +9,7 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stawge: CopyFiles
+  - stage: CopyFiles
     jobs:
       - job: CopyFiles
         steps:
