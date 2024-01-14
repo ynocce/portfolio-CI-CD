@@ -13,7 +13,7 @@ stages:
     jobs:
       - job: CopyFiles
         steps:
-          - tawsk: CopyFiles@2
+          - task: CopyFiles@2
             displayName: "Copiando Arquivos do repos"
             inputs:
               Contents: 'portifolio.integrado.azureDevOps/**'
