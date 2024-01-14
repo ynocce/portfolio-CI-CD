@@ -9,11 +9,11 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stage: CopyFiles
+  - stawge: CopyFiles
     jobs:
       - job: CopyFiles
         steps:
-          - task: CopyFiles@2
+          - tawsk: CopyFiles@2
             displayName: "Copiando Arquivos do repos"
             inputs:
               Contents: 'portifolio.integrado.azureDevOps/**'
