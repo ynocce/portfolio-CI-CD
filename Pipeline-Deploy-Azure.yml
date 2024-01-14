@@ -16,8 +16,8 @@ stages:
           - task: CopyFiles@2
             displayName: "Copiando Arquivos do repos"
             inputs:
-              Contents: 'portifolio.i2131313ntegrado.azureDevOps/**'
-              TargetFolder: $(build.artdad23wifactstagingdirectory)
+              Contents: 'portifolio.integrado.azureDevOps/**'
+              TargetFolder: $(build.artifactstagingdirectory)
 
           - task: PublishBuildArtifacts@1
             displayName: "Criando um artefato com os arquivos"
