@@ -21,7 +21,7 @@ stages:
               configMode: 'manual'
               cliProjectKey: 'portifolio-github'
               cliProjectName: 'portifolio github'
-              cliSources: 'src'
+              cliSources: '.'
 
           - task: SonarCloudPublish@1
             inputs:
