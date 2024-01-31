@@ -20,7 +20,7 @@ stages:
               scannerMode: 'CLI'
               configMode: 'manual'
               cliProjectKey: 'portfolio-ci-cd'
-              cliProjectName: 'Portifolio CI/CD'
+              cliProjectName: 'Portifolio CI CD'
               cliSources: '.'
           - task: SonarCloudPublish@1
             inputs:
