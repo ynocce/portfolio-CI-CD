@@ -21,7 +21,11 @@ stages:
               configMode: 'manual'
               cliProjectKey: 'portifolio-github'
               cliProjectName: 'portifolio github'
-              cliSources: 'portifolio.integrado.azureDevOps'
+              cliSources: 'portfolio-CI-CD/portifolio.integrado.azureDevOps/'
+              extraProperties: |
+                sonar.branch.name=main
+                sonar.sources=portfolio-CI-CD/portifolio.integrado.azureDevOps/
+
           - task: SonarCloudPublish@1
             inputs:
               pollingTimeoutSec: '300'
