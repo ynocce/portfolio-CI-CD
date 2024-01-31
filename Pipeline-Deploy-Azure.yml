@@ -21,11 +21,12 @@ stages:
               configMode: 'manual'
               cliProjectKey: 'portifolio-github'
               cliProjectName: 'portifolio github'
+              cliSources: 'src'
 
           - task: SonarCloudPublish@1
             inputs:
               pollingTimeoutSec: '300'
-              
+
           - task: SonarCloudAnalyze@1
             inputs:
               jdkversion: 'JAVA_HOME_17_X64'
