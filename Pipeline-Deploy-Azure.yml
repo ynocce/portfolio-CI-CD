@@ -19,8 +19,8 @@ stages:
               organization: 'azure-devops-labtest'
               scannerMode: 'CLI'
               configMode: 'manual'
-              cliProjectKey: 'portfolio-ci-cd'
-              cliProjectName: 'Portifolio CI/CD'
+              cliProjectKey: 'portifolio-github'
+              cliProjectName: 'portifolio github'
               cliSources: '.'
           - task: SonarCloudPublish@1
             inputs:
