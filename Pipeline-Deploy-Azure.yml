@@ -16,11 +16,11 @@ stages:
           - task: SonarCloudPrepare@1
             inputs:
               SonarCloud: 'sonarcloud'
-              organization: 'azure-devops-labtest'
+              organization: 'ynocce'
               scannerMode: 'CLI'
               configMode: 'manual'
-              cliProjectKey: 'teste-analise'
-              cliProjectName: 'Teste Analise'
+              cliProjectKey: 'portifolio-ci-cd'
+              cliProjectName: 'portifolio-ci-cd'
               cliSources: '.'
 
           - task: SonarCloudPublish@1
