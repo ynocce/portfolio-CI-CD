@@ -18,9 +18,10 @@ Caso queira ver a documentação como foi feito, acesse meu repos: https://githu
 <img width="20%" align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=ncloc"/>
 <img width="18%" align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=code_smells"/>
 <img width="18%" align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=vulnerabilities"/>
-<img width="15%" align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=security_rating"/>
 <img width="15%" align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=reliability_rating"/>
+<img width="14%" align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=security_rating"/>
 <img width="12%" align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=bugs"/>
+
 
 ##
 
