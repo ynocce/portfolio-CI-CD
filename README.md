@@ -7,5 +7,10 @@
 
    <img width=350px align="center"  src="https://dev.azure.com/LabTesteYgor/curso%20azure%20DevOps/_apis/build/status%2FPipelines%20GIThub%2F%5BBuild%5D%20Portfolio-CI-CD?branchName=main"/>
 #
-<img width=290px align="center"  src="https://sonarcloud.io/images/project_badges/sonarcloud-black.svg"/>
-<img width=290px align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=alert_status"/>
+<img width=290px align="center"  src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg"/>
+<img width=100px align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=security_rating"/>
+<img width=100px align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=bugs"/>
+<img width=100px align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=vulnerabilities"/>
+<img width=100px align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=duplicated_lines_density"/>
+<img width=100px align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=reliability_rating"/>
+<img width=100px align="center"  src="https://sonarcloud.io/api/project_badges/measure?project=ynocce_portfolio-CI-CD&metric=alert_status"/>
