@@ -13,6 +13,22 @@ stages:
     jobs:
       - job: CopyFiles
         steps:
+          - task: SonarCloudPrepare@1
+            inputs:
+              SonarCloud: 'sonarcloud'
+              organization: 'ynocce'
+              scannerMode: 'CLI'
+              configMode: 'manual'
+              cliProjectKey: 'ynocce_portfolio-CI-CD'
+              cliProjectName: 'portfolio-CI-CD'
+              cliSources: '.'
+
+          - task: SonarCloudPublish@1
+            inputs:
+              pollingTimeoutSec: '300'
+          - task: SonarCloudAnalyze@1
+            inputs:
+              jdkversion: 'JAVA_HOME_17_X64'
           - task: CopyFiles@2
             displayName: "Copiando Arquivos do repos"
             inputs:
