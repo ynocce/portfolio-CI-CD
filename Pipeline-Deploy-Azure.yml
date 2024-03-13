@@ -29,14 +29,22 @@ stages:
           - task: SonarCloudAnalyze@1
             inputs:
               jdkversion: 'JAVA_HOME_17_X64'
-          - task: CopyFiles@2
-            displayName: "Copiando Arquivos do repos"
-            inputs:
-              Contents: 'portifolio.integrado.azureDevOps/**'
-              TargetFolder: $(build.artifactstagingdirectory)
+          # - task: CopyFiles@2
+          #   displayName: "Copiando Arquivos do repos"
+          #   inputs:
+          #     Contents: 'portifolio.integrado.azureDevOps/**'
+          #     TargetFolder: $(build.artifactstagingdirectory)
 
-          - task: PublishBuildArtifacts@1
-            displayName: "Criando um artefato com os arquivos"
+          # - task: PublishBuildArtifacts@1
+          #   displayName: "Criando um artefato com os arquivos"
+          #   inputs:
+          #     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          #     ArtifactName: 'drop'
+
+          - task: AzureRmWebAppDeployment@4
             inputs:
-              PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-              ArtifactName: 'drop'
+              ConnectionType: 'AzureRM'
+              azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
+              appType: 'webApp'
+              WebAppName: 'mey-service'
+              packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
