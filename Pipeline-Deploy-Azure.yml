@@ -52,4 +52,4 @@ stages:
               azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
               appType: 'webApp'
               WebAppName: 'mey-service'
-              packageForLinux: '$(System.ArtifactsDirectory)/drop/**'
+              packageForLinux: '$(System.ArtifactsDirectory)/drop'
