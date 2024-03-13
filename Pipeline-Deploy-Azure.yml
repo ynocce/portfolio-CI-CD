@@ -36,4 +36,8 @@ stages:
               azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
               appType: 'webApp'
               WebAppName: 'mey-service'
-              packageForLinux: 'portifolio.integrado.azureDevOps'
+          
+          - task: AzureStaticWebApp@0
+            inputs:
+              app_location: 'portifolio.integrado.azureDevOps'
+              azure_static_web_apps_api_token: '$(token)'
