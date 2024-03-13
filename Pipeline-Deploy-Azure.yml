@@ -40,11 +40,16 @@ stages:
             inputs:
               PathtoPublish: '$(Build.ArtifactStagingDirectory)'
               ArtifactName: 'drop'
-
+          - task: DownloadBuildArtifacts@1
+            inputs:
+              buildType: 'current'
+              downloadType: 'single'
+              artifactName: 'drop'
+              downloadPath: '$(System.ArtifactsDirectory)'
           - task: AzureRmWebAppDeployment@4
             inputs:
               ConnectionType: 'AzureRM'
               azureSubscription: 'Azure-DevOps-Subscription(a454e4e9-14dc-442e-9d50-a76534f9aef6)'
               appType: 'webApp'
               WebAppName: 'mey-service'
-              packageForLinux: '$(Build.ArtifactStagingDirectory)/drop'
+              packageForLinux: '$(System.ArtifactsDirectory)/drop'
