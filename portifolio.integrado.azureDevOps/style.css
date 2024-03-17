@@ -149,7 +149,7 @@ header nav.menu-desktop ul li {
 
 .menu-mobile nav ul li a{
     color: #fff;
-    font-size: 45px;
+    font-size: 25px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
@@ -331,7 +331,7 @@ section.portfolio .flex {
 
 .img-port {
     width: 360px;
-    height: 460px;
+    height: 300px;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -352,7 +352,7 @@ section.portfolio .flex {
     height: 100%;
     background-color: #000000b8;
     transform: scale(1.05);
-    box-shadow: 0 0 30px #2c2c2c;
+    box-shadow: 0 0 3px #00FF08;
     border-radius: 40px;
     display: flex;
     padding: 7px;
@@ -361,7 +361,7 @@ section.portfolio .flex {
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: #fff;
+    color: #ffffff;
     transition: .5s;
 }
 
@@ -398,6 +398,28 @@ footer .line-footer p a {
     color: #fff;
 }
 
+/* ESTILO DA CERTIFICAÇÃO */
+section.certificacao {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    padding-bottom: 70px;
+    
+}
+
+section.certificacao .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-certi {
+    cursor: pointer;
+    position: center;   
+}
+.img-certi img{
+    cursor: pointer;
+    position: center;
+    width: 250px;   
+}
 
 
 @media screen and (max-width: 1020px) {
@@ -522,6 +544,19 @@ footer .line-footer p a {
     }
     
     section.portfolio .flex {
+       gap: 60px;
+    }
+
+    section.certificacao {
+        padding: 80px 8%;
+    }
+
+    .img-certi {
+        text-align: center;
+
+    }
+    
+    section.certificacao .flex {
        gap: 60px;
     }
 
