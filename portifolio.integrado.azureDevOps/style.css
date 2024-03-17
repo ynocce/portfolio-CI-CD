@@ -55,10 +55,12 @@ h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
+    
 }
 
 h2.titulo span {
     color: #00FF08;
+    
 }
 
 button:hover,
@@ -174,6 +176,7 @@ header nav.menu-desktop ul li {
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
     padding: 15px 4%;
+    
 }
 
 section.topo-do-site .flex {
@@ -239,6 +242,7 @@ section.especiliadades {
 
 section.especiliadades .flex {
     gap: 5px;
+    
 }
 
 .especiliadades .especialidades-box {
@@ -249,10 +253,12 @@ section.especiliadades .flex {
     border-radius: 20px;
     margin-top: 15px;
     transition: .2s;
+    
 }
 
 .especiliadades .especialidades-box img {
     margin-top: 4px;
+    
 }
 .especiliadades .especialidades-box:hover {
     transform: scale(1.05);
@@ -262,11 +268,13 @@ section.especiliadades .flex {
 .especiliadades .especialidades-box i {
     font-size: 70px;
     color: #00FF08;
+    
 }
 
 .especiliadades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
+    
 }
 
 /* ESTILO DO SOBRE */
@@ -322,11 +330,13 @@ section.portfolio {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
     padding-bottom: 70px;
+    
 }
 
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
+    
 }
 
 .img-port {
@@ -338,6 +348,7 @@ section.portfolio .flex {
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    
 }
 
 .img-port:hover {
@@ -345,6 +356,7 @@ section.portfolio .flex {
 }
 
 .overlay {
+    border-bottom: 2px solid #00FF08;
     position: absolute;
     top: 0;
     left: 0;
@@ -352,7 +364,7 @@ section.portfolio .flex {
     height: 100%;
     background-color: #000000b8;
     transform: scale(1.05);
-    box-shadow: 0 0 3px #00FF08;
+    box-shadow: 0 0 3px #ffffff98;
     border-radius: 40px;
     display: flex;
     padding: 7px;
@@ -409,11 +421,13 @@ section.certificacao {
 section.certificacao .flex {
     justify-content: space-around;
     margin-top: 60px;
+    
 }
 
 .img-certi {
     cursor: pointer;
     position: center;   
+    
 }
 .img-certi img{
     cursor: pointer;
@@ -482,6 +496,7 @@ section.certificacao .flex {
     section.especiliadades2 .flex {
         flex-direction: row;
         gap: 5px;
+        
     }
     .especiliadades2 h2{
         padding-bottom: 15px;
