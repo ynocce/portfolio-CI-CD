@@ -134,6 +134,7 @@ header nav.menu-desktop ul li {
 
 .menu-mobile .btn-fechar{
     padding: 20px 5%;
+    cursor: pointer;
 }
 
 .menu-mobile .btn-fechar i{
@@ -143,11 +144,12 @@ header nav.menu-desktop ul li {
 
 .menu-mobile nav ul{
     text-align: right;
+    
 }
 
 .menu-mobile nav ul li a{
     color: #fff;
-    font-size: 200px;
+    font-size: 45px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
@@ -368,52 +370,6 @@ section.portfolio .flex {
     opacity: 0;
 }
 
-/* ESTILO DO FORMULÁRIO DE CONTATO */
-section.formulario {
-    padding: 80px 4%;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    background-color: #242424;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 18px;
-}
-
-form textarea {
-    resize: none;
-    max-height: 200px;
-}
-
-form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input {
-    width: 120px;
-    background-color: #00FF08;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
-}
-
 /* ESTILO DO RODAPÉ */
 
 footer {
@@ -450,7 +406,9 @@ footer .line-footer p a {
     .flex {
         flex-direction: column;
     }
-
+    .btn-abrir-menu{
+        display: block;
+    }
     .topo-do-site .flex{
         flex-direction: column-reverse;
     }
