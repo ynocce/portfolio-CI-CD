@@ -7,6 +7,25 @@
     scroll-behavior: smooth
 }
 
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #00FF08;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color:#00FF08; 
+  }
+
+  
 body {
     background-color: #000;
     height: 100vh;
@@ -36,10 +55,12 @@ h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
+    
 }
 
 h2.titulo span {
     color: #00FF08;
+    
 }
 
 button:hover,
@@ -115,6 +136,7 @@ header nav.menu-desktop ul li {
 
 .menu-mobile .btn-fechar{
     padding: 20px 5%;
+    cursor: pointer;
 }
 
 .menu-mobile .btn-fechar i{
@@ -124,11 +146,12 @@ header nav.menu-desktop ul li {
 
 .menu-mobile nav ul{
     text-align: right;
+    
 }
 
 .menu-mobile nav ul li a{
     color: #fff;
-    font-size: 200px;
+    font-size: 25px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
@@ -153,6 +176,7 @@ header nav.menu-desktop ul li {
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
     padding: 15px 4%;
+    
 }
 
 section.topo-do-site .flex {
@@ -218,6 +242,7 @@ section.especiliadades {
 
 section.especiliadades .flex {
     gap: 5px;
+    
 }
 
 .especiliadades .especialidades-box {
@@ -228,10 +253,12 @@ section.especiliadades .flex {
     border-radius: 20px;
     margin-top: 15px;
     transition: .2s;
+    
 }
 
 .especiliadades .especialidades-box img {
     margin-top: 4px;
+    
 }
 .especiliadades .especialidades-box:hover {
     transform: scale(1.05);
@@ -241,11 +268,13 @@ section.especiliadades .flex {
 .especiliadades .especialidades-box i {
     font-size: 70px;
     color: #00FF08;
+    
 }
 
 .especiliadades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
+    
 }
 
 /* ESTILO DO SOBRE */
@@ -301,22 +330,25 @@ section.portfolio {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
     padding-bottom: 70px;
+    
 }
 
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
+    
 }
 
 .img-port {
     width: 360px;
-    height: 460px;
+    height: 300px;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    
 }
 
 .img-port:hover {
@@ -324,6 +356,7 @@ section.portfolio .flex {
 }
 
 .overlay {
+    border-bottom: 2px solid #00FF08;
     position: absolute;
     top: 0;
     left: 0;
@@ -331,7 +364,7 @@ section.portfolio .flex {
     height: 100%;
     background-color: #000000b8;
     transform: scale(1.05);
-    box-shadow: 0 0 30px #2c2c2c;
+    box-shadow: 0 0 3px #ffffff98;
     border-radius: 40px;
     display: flex;
     padding: 7px;
@@ -340,59 +373,13 @@ section.portfolio .flex {
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: #fff;
+    color: #ffffff;
     transition: .5s;
 }
 
 
 .overlay:hover {
     opacity: 0;
-}
-
-/* ESTILO DO FORMULÁRIO DE CONTATO */
-section.formulario {
-    padding: 80px 4%;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    background-color: #242424;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 18px;
-}
-
-form textarea {
-    resize: none;
-    max-height: 200px;
-}
-
-form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input {
-    width: 120px;
-    background-color: #00FF08;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
 }
 
 /* ESTILO DO RODAPÉ */
@@ -423,6 +410,30 @@ footer .line-footer p a {
     color: #fff;
 }
 
+/* ESTILO DA CERTIFICAÇÃO */
+section.certificacao {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    padding-bottom: 70px;
+    
+}
+
+section.certificacao .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+    
+}
+
+.img-certi {
+    cursor: pointer;
+    position: center;   
+    
+}
+.img-certi img{
+    cursor: pointer;
+    position: center;
+    width: 250px;   
+}
 
 
 @media screen and (max-width: 1020px) {
@@ -431,7 +442,9 @@ footer .line-footer p a {
     .flex {
         flex-direction: column;
     }
-
+    .btn-abrir-menu{
+        display: block;
+    }
     .topo-do-site .flex{
         flex-direction: column-reverse;
     }
@@ -483,6 +496,7 @@ footer .line-footer p a {
     section.especiliadades2 .flex {
         flex-direction: row;
         gap: 5px;
+        
     }
     .especiliadades2 h2{
         padding-bottom: 15px;
@@ -545,6 +559,19 @@ footer .line-footer p a {
     }
     
     section.portfolio .flex {
+       gap: 60px;
+    }
+
+    section.certificacao {
+        padding: 80px 8%;
+    }
+
+    .img-certi {
+        text-align: center;
+
+    }
+    
+    section.certificacao .flex {
        gap: 60px;
     }
 
