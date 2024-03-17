@@ -432,7 +432,7 @@ section.certificacao .flex {
 .img-certi img{
     cursor: pointer;
     position: center;
-    width: 250px;   
+    width: 170px;   
 }
 
 
@@ -570,7 +570,11 @@ section.certificacao .flex {
         text-align: center;
 
     }
-    
+    .img-certi img{
+        cursor: pointer;
+        position: center;
+        width: 250px;   
+    }
     section.certificacao .flex {
        gap: 60px;
     }
