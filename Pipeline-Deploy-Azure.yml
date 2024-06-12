@@ -9,11 +9,12 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stage: SonarQube
+  - stage: SonarQube_Build
     jobs:
       - job: SonarQube
         steps:
           - task: SonarCloudPrepare@1
+            displayName: "Sonar Prepare"
             inputs:
               SonarCloud: 'sonarcloud'
               organization: 'ynocce'
@@ -22,13 +23,17 @@ stages:
               cliProjectKey: 'ynocce_portfolio-CI-CD'
               cliProjectName: 'portfolio-CI-CD'
               cliSources: '.'
-
-          - task: SonarCloudPublish@1
-            inputs:
-              pollingTimeoutSec: '300'
+              
           - task: SonarCloudAnalyze@1
+            displayName: "Sonar Run"
             inputs:
               jdkversion: 'JAVA_HOME_17_X64'
+              
+          - task: SonarCloudPublish@1
+            displayName: "Sonar Publish"
+            inputs:
+              pollingTimeoutSec: '300'
+              
           - task: CopyFiles@2
             displayName: "Copiando Arquivos do repos"
             inputs:
