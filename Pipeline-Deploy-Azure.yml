@@ -9,7 +9,7 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stage: SonarQube + Build
+  - stage: SonarQube_Build
     jobs:
       - job: SonarQube
         steps:
