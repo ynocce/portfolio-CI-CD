@@ -4,6 +4,7 @@
 
 trigger:
 - main
+- Release
 
 pool:
   vmImage: ubuntu-latest
